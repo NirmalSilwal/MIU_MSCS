@@ -1,0 +1,7 @@
+Problem 1:
+
+ Person.java and MyPersonList.java were available in your Assignment folder. 
+ In that example few methods are unimplemented.
+ You have to implement those methods for the Person type.
+ For searching method use lastName as key input.
+ Refer demo code of MyStringList.java.
