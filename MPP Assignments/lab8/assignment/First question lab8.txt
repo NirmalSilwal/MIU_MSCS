@@ -1,0 +1,20 @@
+solution of problem 1st, lab 8
+
+1. (a) (i)
+
+parameters  - i, j
+free variables - s, t
+
+1. (a) (ii)
+
+parameters - s, t
+free variables - ignorecase
+
+1. (b) (i)
+
+Supplier<Double> val = () -> Math.random();
+
+
+
+
+
