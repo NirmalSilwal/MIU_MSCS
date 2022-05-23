@@ -3,8 +3,12 @@ DAO - Data Access Object
 > - Monolith applicaition has _maintainaibility issues_.
 
 #### Different ways to integrate applications:
-- Remote Procedure Invocation (Synchronous)
+- Remote Procedure Invocation (Synchronous i.e requests waits for the response)
+     - currently primarily used with Web Services like REST, SOAP
 - Messaging (Asynchronous)
+     - sending without requiring the direct response
+     - standards like JMS, MSMQ, AMQP
+     - either Publish/Subscribe or Point to Point sending
 
 > Enterprise Service Bus (ESB) - used for integration of various services 
 
@@ -39,7 +43,7 @@ Now the idea of micro services came as the idea to solve the issues with ESBs. M
 - some functionalities are used in many services like _transcation, security, logging..._, so you don't wanna copy paste whole bunch of code right! hence, AOP will help us here :)
 - with AOP you can **write** code for a cross-cutting concern **once** (in an **advice method**)
 - then **specify all the points** that the advice should run. This is called Aspect.
-- Containers implements AOP. You can make **proxy object** and inject to make it look like real thing. The proxy calls the Advice method.
+- **Containers implements AOP.** You can make **proxy object** and inject to make it look like real thing. The proxy calls the Advice method.
   - also called _interceptor pattern_
  
  #### Object Relational Mapping (ORM)
@@ -52,5 +56,19 @@ Now the idea of micro services came as the idea to solve the issues with ESBs. M
 ### Two most common data related patterns
   - **Repositories (aka DAO)**
   - **Data Transfer Objects (DTO)**
+
+### Maven
+- Maven is the build system
+- Dependency Manager (downlaods JARs)
+- Maven has a POM (project object model) file - **pom.xml**. POM tells maven what your project is and what it needs
+- Maven has **archetypes** (starter projects for certain things, but they're often outdated)
+- it has standarized directory structure
+- **Maven builds, tests and packages your code**
+ 
+3 main areas of pom files are
+   - 1. Project description
+   - 2. **Dependencies**
+   - 3. Plugins (special compiling/packaging) 
+
 
 
