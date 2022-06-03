@@ -24,3 +24,11 @@ Just a few reasons for using surrogate keys:
 **Natural Key**
 - it is a column or set of columns that already exists in the table that is used to uniquely identify a record in the table
 - key values have business meaning and can be used as a search key when quering a table
+
+**Sequences in database**
+- Generating unique integers is a very common task in database systems. Many applications require each row in a given table to hold a unique value. One way to tackle this problem is to use sequences.
+- A sequence is a database object which allows users to generate unique integer values.
+> - The primary key is a column in a table.
+> - The primary key needs a unique value, which needs to come from somewhere.
+> - The sequence is a feature by some database products which just creates unique values. It just increments a value and returns it. The special thing about it is: there is no transaction isolation, so several transactions can not get the same value, the incrementation is also not rolled back. Without a database sequence it is very hard to generate unique incrementing numbers.
+
