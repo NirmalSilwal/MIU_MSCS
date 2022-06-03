@@ -32,3 +32,7 @@ Just a few reasons for using surrogate keys:
 > - The primary key needs a unique value, which needs to come from somewhere.
 > - The sequence is a feature by some database products which just creates unique values. It just increments a value and returns it. The special thing about it is: there is no transaction isolation, so several transactions can not get the same value, the incrementation is also not rolled back. Without a database sequence it is very hard to generate unique incrementing numbers.
 
+**Global Transactions**
+- the transcations the span over multiple transactional resources such as databases or message buses
+- more common in enterprise applications
+- also called XA transactions (eXtended Architecture)
