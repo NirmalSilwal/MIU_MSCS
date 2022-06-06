@@ -1,0 +1,13 @@
+package edu.miu.cs544;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class App {
+	public static void main(String[] args) {
+//        System.out.println("FIXME: Empty Project");
+		ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+		Greeting greeting = context.getBean("greeting", Greeting.class);
+		greeting.sayHello();
+	}
+}

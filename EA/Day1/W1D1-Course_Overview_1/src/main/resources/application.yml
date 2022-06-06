@@ -1,0 +1,18 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost/cs544
+#    username: root
+#    password: root  
+#  jpa:
+#    properties:
+#       hibernate.dialect: org.hibernate.dialetc.MySQL5Dialect
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/views
+#      suffix: .jsp
+#logging:
+#  level:
+#    root: DEBUG

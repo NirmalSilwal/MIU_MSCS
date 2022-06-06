@@ -1,0 +1,12 @@
+cs544/cov1/domain/Email.class
+cs544/cov1/web/ContactController.class
+cs544/cov1/domain/Contact.class
+cs544/cov1/MvcConfig.class
+cs544/cov1/WebSecurityConfig.class
+cs544/cov1/service/ContactService.class
+cs544/cov1/domain/Phone.class
+cs544/cov1/Application.class
+cs544/cov1/web/MyErrorController.class
+cs544/cov1/dao/ContactDao.class
+cs544/cov1/web/PhoneController.class
+cs544/cov1/web/EmailController.class

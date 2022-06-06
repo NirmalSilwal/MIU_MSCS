@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+file:/Users/nirmalsilwal/Desktop/MIU/EA/code/Day3/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+meta_index
