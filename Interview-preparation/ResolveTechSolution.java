@@ -1,4 +1,3 @@
-```
 package resolveTechAssessment;
 
 import java.util.ArrayList;
@@ -48,4 +47,3 @@ public class ResolveTechSolution {
         subseq(s.substring(1), ans);
     }
 }
-```
